@@ -5,11 +5,15 @@ Preprint manuscript v1.0, 2026-11-05. **All rights reserved.**
 
 ## Publication and downloads
 
-This is the owner-authorized v1.0 release payload. The current public release and Zenodo DOI, once published, are linked from the live repository README: https://github.com/yonezaemon1-hub/no54-class12-consecutive-pattern-popularity. No DOI is predicted in this immutable payload.
+Published on 2026-11-05 (JST). Version **v1.0**. Publication type: **Preprint**.
 
-- PDF: paper/No54_v1.0_PREPRINT_20261105.pdf.
-- Reproducibility: source code, frozen v0.4 archive, earlier archives, audit report and user-supplied Windows console log are included here.
-- Intended GitHub tag: v1.0. Publication type: Preprint.
+- Version DOI: [10.5281/zenodo.23966026](https://doi.org/10.5281/zenodo.23966026).
+- [Zenodo public record](https://zenodo.org/records/23966026).
+- [GitHub Release v1.0](https://github.com/yonezaemon1-hub/no54-class12-consecutive-pattern-popularity/releases/tag/v1.0).
+- [Download PDF](https://github.com/yonezaemon1-hub/no54-class12-consecutive-pattern-popularity/releases/download/v1.0/No54_v1.0_PREPRINT_20261105.pdf).
+- [Download reproducibility ZIP](https://github.com/yonezaemon1-hub/no54-class12-consecutive-pattern-popularity/releases/download/v1.0/No54_v1.0_REPRODUCIBILITY_20261105.zip).
+
+The PDF and reproducibility ZIP were downloaded from both platforms: all four files match the fixed release originals in SHA256, exact size and bytes. The DOI resolves to the public Zenodo record. See PUBLICATION_VERIFICATION.json and SHA256SUMS_RELEASE.txt. The DOI and cross-links in this live README and CITATION.cff supersede metadata prepared before deposition inside the immutable supplement.
 
 ## Exact result and restricted scope
 

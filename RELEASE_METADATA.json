@@ -10,9 +10,17 @@
   "human_peer_review": "NOT_PERFORMED",
   "audit": "Claude v0.2 mathematical PASS, v0.3 delta PASS",
   "windows": "Owner-supplied console reproduction PASS",
-  "payload_stage": "Prepared before final DOI registration; consult live repository for actual publication identifiers",
+  "payload_stage": "Published; fixed PDF and supplement unchanged after registration",
   "owner_publication_authorization": true,
-  "doi": null,
+  "doi": "10.5281/zenodo.23966026",
   "google_scholar": "NOT_CHECKED",
-  "openalex": "NOT_CHECKED"
+  "openalex": "NOT_CHECKED",
+  "publication_status": "PUBLISHED",
+  "actual_publication_date": "2026-11-05",
+  "doi_url": "https://doi.org/10.5281/zenodo.23966026",
+  "zenodo_url": "https://zenodo.org/records/23966026",
+  "github_repository": "https://github.com/yonezaemon1-hub/no54-class12-consecutive-pattern-popularity",
+  "github_release": "https://github.com/yonezaemon1-hub/no54-class12-consecutive-pattern-popularity/releases/tag/v1.0",
+  "github_release_published_at": "2026-11-04T23:22:56Z",
+  "zenodo_public_record_created_at": "2026-11-04T23:51:14.402125+00:00"
 }

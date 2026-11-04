@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Limited preprint v1.0. Consult the live repository CITATION.cff for the registered DOI after deposition."
+message: "Please cite the limited preprint using the registered version DOI. Novelty INCONCLUSIVE; human peer review not performed."
 type: article
 title: "Exact Consecutive-Pattern Popularity in the Class Avoiding 123, 231 and 312"
 authors:
@@ -15,3 +15,7 @@ keywords:
   - Euler zigzag numbers
   - integral operators
 license: LicenseRef-All-Rights-Reserved
+doi: "10.5281/zenodo.23966026"
+url: "https://zenodo.org/records/23966026"
+repository-code: "https://github.com/yonezaemon1-hub/no54-class12-consecutive-pattern-popularity"
+date-released: "2026-11-05"

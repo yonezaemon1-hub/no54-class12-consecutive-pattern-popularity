@@ -1,0 +1,80 @@
+{
+  "result": "PASS",
+  "repository_public": true,
+  "git_release": {
+    "id": 434573769,
+    "tag": "v1.0",
+    "draft": false,
+    "prerelease": false,
+    "commit": "f8e8e26152738e29f681baa62e8c462eaa00c56b"
+  },
+  "zenodo_public": {
+    "id": 23966026,
+    "state": "done",
+    "submitted": true,
+    "resource_type": {
+      "title": "Preprint",
+      "type": "publication",
+      "subtype": "preprint"
+    },
+    "version": "v1.0",
+    "creator": [
+      {
+        "name": "Yonezu, Ryutaro",
+        "affiliation": "Independent Researcher"
+      }
+    ],
+    "license": "All rights reserved - verified on public record page"
+  },
+  "doi_resolution": {
+    "doi": "10.5281/zenodo.23966026",
+    "doi_url": "https://doi.org/10.5281/zenodo.23966026",
+    "resolved_url": "https://zenodo.org/records/23966026",
+    "http_status": 200,
+    "result": "PASS"
+  },
+  "public_downloads": [
+    {
+      "platform": "GitHub",
+      "key": "github_pdf",
+      "file": "No54_v1.0_PREPRINT_20261105.pdf",
+      "bytes": 71450,
+      "sha256": "06dfafdebd828893e9f8522dda73a32547580918a926069f2dc56a6f7baca350",
+      "result": "PASS",
+      "http_status": 200
+    },
+    {
+      "platform": "GitHub",
+      "key": "github_zip",
+      "file": "No54_v1.0_REPRODUCIBILITY_20261105.zip",
+      "bytes": 321224,
+      "sha256": "00aae3a2aae202809c2e4702dd60b893098e08941c2677c15fea9e600b64f285",
+      "result": "PASS",
+      "http_status": 200
+    },
+    {
+      "platform": "Zenodo",
+      "key": "zenodo_pdf",
+      "file": "No54_v1.0_PREPRINT_20261105.pdf",
+      "bytes": 71450,
+      "sha256": "06dfafdebd828893e9f8522dda73a32547580918a926069f2dc56a6f7baca350",
+      "result": "PASS",
+      "http_status": 200
+    },
+    {
+      "platform": "Zenodo",
+      "key": "zenodo_zip",
+      "file": "No54_v1.0_REPRODUCIBILITY_20261105.zip",
+      "bytes": 321224,
+      "sha256": "00aae3a2aae202809c2e4702dd60b893098e08941c2677c15fea9e600b64f285",
+      "result": "PASS",
+      "http_status": 200
+    }
+  ],
+  "original_archive_sha256": "9fca07c3ce4f15bfa7c9022660cab8051a175149291a0c38e605dce1c5adc446",
+  "original_file_bytes_preserved": true,
+  "human_peer_review": "NOT_PERFORMED",
+  "novelty": "INCONCLUSIVE",
+  "google_scholar": "NOT_CHECKED",
+  "openalex": "NOT_CHECKED"
+}

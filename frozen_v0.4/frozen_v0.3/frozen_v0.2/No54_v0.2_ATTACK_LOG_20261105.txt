@@ -1,0 +1,16 @@
+Adversarial audit No.54 on 2026-11-05.
+Existing v0.1 manifest: 3/3 SHA256 PASS.
+Original verifier brute permutations: n=3..9 PASS (as recorded in original log).
+Independent simplex-moment DP + Entringer Euler numbers:
+PASS n=3: independent simplex DP N321=1
+PASS n=4: independent simplex DP N321=6
+PASS n=5: independent simplex DP N321=29
+PASS n=6: independent simplex DP N321=150
+PASS n=7: independent simplex DP N321=841
+PASS n=10: independent simplex DP N321=252750
+PASS n=15: independent simplex DP N321=15583997521
+PASS n=22: independent simplex DP N321=876726137720576550
+PASS: all n=3..22 match, no shared core recurrence or original verifier
+Scope warning: larger n=10,20,40,60,100,120 lines in original v0.1 verifier are predictions directly generated from theorem, not independent pattern counts.
+PROOF: explicit analytical audit found no flaw. EXTERNAL AI/HUMAN REVIEW: NOT DONE.
+NOVELTY INCONCLUSIVE. PUBLICATION HOLD.

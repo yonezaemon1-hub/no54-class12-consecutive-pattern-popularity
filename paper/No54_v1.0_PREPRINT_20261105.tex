@@ -1,0 +1,422 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  11pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[a4paper,margin=23mm]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\setlength{\emergencystretch}{3em}
+\let\oldsection\section
+\renewcommand{\section}{\needspace{5\baselineskip}\oldsection}
+\usepackage{needspace}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Exact Consecutive-Pattern Popularity in the Class Avoiding 123, 231 and 312},
+  pdfauthor={Ryutaro Yonezu},
+  colorlinks=true,
+  linkcolor={black},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Exact Consecutive-Pattern Popularity in the Class Avoiding 123,
+231 and 312}
+\author{Ryutaro Yonezu}
+\date{Independent Researcher \textbar{} Preprint v1.0 \textbar{} 5
+November 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Abstract}\label{abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+For permutations avoiding the consecutive patterns \(123\), \(231\) and
+\(312\), we identify the total number of consecutive \(321\)
+occurrences, counted over all permutations and all positions, as
+\(E_{n+1}-2E_n\) for every \(n\geq3\), where \(E_n\) are the Euler
+zigzag numbers. Reverse-complement symmetry gives exact totals for
+\(132\) and \(213\). With the normalization of Hassler and Kirgizov, the
+limiting popularities are \(4/\pi^2\) for \(321\) and \(1/2-2/\pi^2\)
+for each of \(132\) and \(213\). The argument marks an edge in the known
+circular-difference integral-operator model. The avoidance count,
+Euler-number sequence, and underlying operator are prior work. This is a
+limited preprint for one consecutive-avoidance class; novelty remains
+\textbf{INCONCLUSIVE}, and human peer review has \textbf{not been
+performed}.
+
+\section*{Audit and publication
+disclosures}\label{audit-and-publication-disclosures}
+\addcontentsline{toc}{section}{Audit and publication disclosures}
+
+The supplied Claude Sonnet 5.5 report records v0.2 MODEL / PROOF /
+COMPUTATION PASS and v0.3 differential audit PASS. The reviewer did not
+inspect HK v2, EKP Section 7 or Zhao (2014), and did not execute
+Windows. ChatGPT's primary-source checks are attributed separately.
+Windows v0.4.1 reproduction PASS is supported by the owner's supplied
+console log, not by execution in this publication session or by Claude.
+The v0.4 mathematics and code remain fixed; historical HOLD records
+remain archived. Human peer review has \textbf{not been performed}.
+Copyright (C) 2026 Ryutaro Yonezu. \textbf{All rights reserved}.
+
+\section{Definitions and claimed
+theorem}\label{definitions-and-claimed-theorem}
+
+Let \(A_n=\operatorname{Av}_n(123,231,312)\) be the set of length-\(n\)
+permutations avoiding the three indicated \textbf{consecutive} patterns.
+Let \(E_n\) be the Euler up/down (zigzag) numbers characterized by
+
+\(A(z)=\sum_{n\geq0} E_n z^n/n!=\sec z+\tan z\).
+
+Let \(N_n(p)\) be the sum of the numbers of consecutive occurrences of
+pattern \(p\) over \textbf{all} permutations in \(A_n\), counting each
+location separately.
+
+\needspace{10\baselineskip}
+
+\textbf{Theorem (independent AI mathematical audit reported PASS;
+novelty not established).} For every integer \(n\geq3\),
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(|A_n|=nE_{n-1}\) (known, included only as a cross-check).
+\item
+  \(N_n(321)=E_{n+1}-2E_n\).
+\item
+  \(N_n(132)=N_n(213)=\frac{(n-2)nE_{n-1}-E_{n+1}+2E_n}{2}\).
+\item
+  Using the original paper's normalization
+  \(\operatorname{pop}(p)=\lim_{n\to\infty}N_n(p)/(n|A_n|)\), whenever
+  the limit is evaluated: \(\operatorname{pop}(321)=4/\pi^2\),
+  \(\operatorname{pop}(132)=\operatorname{pop}(213)=1/2-2/\pi^2\).
+\end{enumerate}
+
+Since \(\pi\) is transcendental, the three limits above are irrational
+(indeed transcendental, since a nonzero rational affine transform of a
+transcendental number is transcendental).
+
+\section{Uniform real variables and circular
+differences}\label{uniform-real-variables-and-circular-differences}
+
+Let \(x_1,\ldots,x_n\) be independent \(\operatorname{Unif}(0,1)\)
+random variables. Almost surely they are distinct, and their rank
+permutation is uniformly distributed on \(S_n\). Define
+
+\(u_j=\{x_j-x_{j+1}\}\), for \(1\leq j\leq n-1\),
+
+where braces denote fractional part in \([0,1)\).
+
+The map \((x_1,\ldots,x_n)\longmapsto(x_1,u_1,\ldots,u_{n-1})\) is an
+invertible triangular group transformation on the torus modulo one,
+preserving normalized Lebesgue measure. Therefore the anchor \(x_1\) and
+all \(u_j\) are mutually independent \(\operatorname{Unif}(0,1)\) random
+variables. Conditional on the entire \(u\) vector, each \(x_j\) is
+uniform on \([0,1)\).
+
+\textbf{Local equivalence:} for any triple of distinct reals
+\(x_j,x_{j+1},x_{j+2}\), the associated rank pattern is in
+\(\{132,213,321\}\) if and only if \(u_j+u_{j+1}<1\). The other three
+patterns \(\{123,231,312\}\) correspond to \(u_j+u_{j+1}>1\). Equality
+occurs only on a measure-zero set.
+
+Indeed, the three positions on the circle are \(x_j\), \(\{x_j-u_j\}\),
+and \(\{x_j-u_j-u_{j+1}\}\). When \(u_j+u_{j+1}<1\), the rank pattern is
+\(321\) precisely when \(x_j\geq u_j+u_{j+1}\), a conditional event of
+probability \(1-u_j-u_{j+1}\).
+
+Write \(m=n-1\),
+\(\Omega_m=\{u\in[0,1]^m: u_j+u_{j+1}<1\ \text{for }j=1,\ldots,m-1\}\).
+It follows that
+
+\(|A_n|/n!=\int_{\Omega_{n-1}}1\,du\), and
+
+\(N_n(321)/n!=\int_{\Omega_{n-1}}\left[\sum_{j=1}^{n-2}(1-u_j-u_{j+1})\right]du\).
+
+\textbf{Audit checkpoint A:} Independently verify the torus
+measure-preserving change of variables, the six-pattern case split, and
+the weight \(1-u_j-u_{j+1}\). All later equations depend on this step.
+
+\section{Resolvent and Euler EGF}\label{resolvent-and-euler-egf}
+
+Define the integral operator on continuous functions
+
+\[(Uf)(t)=\int_0^{1-t}f(s)\,ds\]
+
+and its resolvent applied to \(1\) as a power series
+
+\(F(z,t)=\sum_{k\geq0}z^k(U^k1)(t)\).
+
+Initially the series converges for \(|z|<1\), which suffices to justify
+term-by-term integration and differentiation in \(t\) locally near
+\(z=0\). The identity \(F=1+zUF\) gives
+
+\(\frac{\partial F(z,t)}{\partial t}=-zF(z,1-t)\), \(F(z,1)=1\), and
+\(\frac{\partial^2F}{\partial t^2}=-z^2F\).
+
+Solving yields
+
+\(F(z,t)=A(z)\cos(zt)-\sin(zt)\),
+
+where \(A(z)=(1+\sin z)/\cos z=\sec z+\tan z\), since \(F(z,1)=1\).
+
+For \(m\geq1\), the integral
+\(\int_{\Omega_m}1\,du=\int_0^1(U^{m-1}1)(t)\,dt\). Consequently
+
+\(\sum_{m\geq1}z^m\operatorname{vol}(\Omega_m)=z\int_0^1F(z,t)\,dt=F(z,0)-1=A(z)-1\).
+
+Coefficient comparison yields \(\operatorname{vol}(\Omega_m)=E_m/m!\),
+and hence the known \(|A_n|=nE_{n-1}\).
+
+\textbf{Audit checkpoint B:} Check both boundary conditions, the series
+index \(m=n-1\), and the normalizing \(n!\).
+
+\section{Marking a 321 occurrence and the exact
+EGF}\label{marking-a-321-occurrence-and-the-exact-egf}
+
+Set
+
+\(J(z)=\int_0^1\int_0^{1-u}(1-u-v)F(z,u)F(z,v)\,dv\,du\).
+
+Choosing a marked adjacent pair \(u_j,u_{j+1}\) in an admissible chain
+\(u_1,\ldots,u_{n-1}\), the chain on either side of that edge
+contributes powers of \(U\). Thus the product of the two \(F\) factors
+enumerates all left/right extensions. Since the two marked variables
+contribute \(z^2\), while the original occurrence-count EGF is indexed
+by permutation length \(n=m+1\), we get the \textbf{crucial shift}
+
+\(H(z):=\sum_{n\geq3}N_n(321)z^n/n!=z^3J(z)\).
+
+The following algebra evaluates the integral exactly. From
+\(F(z,t)=1+z\int_0^{1-t}F(z,s)\,ds\), first obtain
+
+\(z\int_0^{1-u}(1-u-v)F(z,v)\,dv=\int_u^1(F(z,y)-1)\,dy\).
+
+Therefore, interchanging integration order,
+
+\[J(z)=\frac1z\int_0^1F(z,u)\int_u^1(F(z,y)-1)\,dy\,du\]
+
+\[\phantom{J(z)}=\frac1z\int_0^1(F(z,y)-1)\int_0^y F(z,u)\,du\,dy\]
+
+\(\phantom{J(z)}=\frac1{z^2}\int_0^1(F(z,y)-1)(F(z,1-y)-1)\,dy\).
+
+Use \(F_y(z,y)=-z F(z,1-y)\), \(F(z,0)=A(z)\), \(F(z,1)=1\), and
+\(z\int_0^1F(z,y)\,dy=A(z)-1\). Then
+
+\[z^3J(z)=-\int_0^1(F-1)F_y\,dy-z\int_0^1(F-1)\,dy\]
+
+\[\phantom{z^3J(z)}=(A-1)^2/2-(A-1)+z\]
+
+\(\phantom{z^3J(z)}=(A^2-4A+3)/2+z\).
+
+Finally \(A'=(A^2+1)/2\), as follows by differentiating
+\(\sec z+\tan z\). Therefore
+
+\(H(z)=A'(z)-2A(z)+1+z\).
+
+\needspace{4\baselineskip}
+
+The coefficients of \(z^0,z^1,z^2\) are zero. Comparing the coefficient
+of \(z^n/n!\) for every \(n\geq3\) proves
+
+\(N_n(321)=E_{n+1}-2E_n\).
+
+\textbf{Audit checkpoint C:} The most important possible failure points
+are the \(z^3\) shift in \(H\), swapping integrals, and the last
+integration by parts. Check each separately, without relying on
+numerical data.
+
+\section{The two other allowed
+patterns}\label{the-two-other-allowed-patterns}
+
+Reverse-complement (\(R\circ C\)) fixes the forbidden set
+\(\{123,231,312\}\) (it fixes \(123\) and swaps \(231\) and \(312\)),
+and exchanges the permitted patterns \(132\) and \(213\), while fixing
+\(321\). Hence \(N_n(132)=N_n(213)\) exactly for all \(n\).
+
+Every admissible permutation contributes \(n-2\) consecutive triples,
+all in \(\{132,213,321\}\); therefore
+
+\(N_n(132)+N_n(213)+N_n(321)=(n-2)|A_n|\).
+
+Combining this relation with the established expression for \(N_n(321)\)
+proves claim 3.
+
+\section{Asymptotic normalization (important
+correction)}\label{asymptotic-normalization-important-correction}
+
+Hassler--Kirgizov (arXiv:2511.02442v2, their Eq. (1.1)) use \(n|A_n|\)
+as the denominator in their definition of \(\operatorname{pop}\). The
+alternative \((n-2)|A_n|\) is a natural normalization over actual
+length-three windows but differs at finite \(n\); both have the same
+limit.
+
+The standard asymptotic of Euler zigzag numbers is
+
+\(E_n/n!\sim2(2/\pi)^{n+1}\).
+
+Hence, using \(|A_n|=nE_{n-1}\),
+
+\(\frac{N_n(321)}{n|A_n|}=\frac{E_{n+1}-2E_n}{n^2E_{n-1}}\longrightarrow\frac4{\pi^2}\).
+
+The other two limits follow from symmetry and the sum of \((n-2)|A_n|\)
+windows. This gives both a solution candidate for their open Class 12
+and an irrational asymptotic popularity example.
+
+\section{Independent arithmetic
+checking}\label{independent-arithmetic-checking}
+
+Run accompanying \texttt{No54\_v0.1\_VERIFY\_20261105.py} with
+standard-library Python 3.10+; it builds Euler numbers using a
+recurrence and separately brute-forces all permutations for
+\(3\leq n\leq9\). It checks the avoidance-set count, each
+allowed-pattern count, and the exact formulas. Additional values for
+\(n=10,20,40,60,100,120\) are generated by exact integer arithmetic.
+These computations do \textbf{not} replace proof or external review.
+
+\section{Prior work and scope of the
+contribution}\label{prior-work-and-scope-of-the-contribution}
+
+Hassler and Kirgizov {[}1{]}, Table 1, list this exact
+consecutive-avoidance class as Class 12; their equation (1.1) supplies
+the denominator \(n|A_n|\). Their v2 asks for this class's popularities.
+The statement addresses this class and length-three consecutive
+statistics only.
+
+The count \(|A_n|=nE_{n-1}\) is due to Kitaev and Mansour {[}2{]} and is
+explicitly restated and attributed in Ehrenborg, Kitaev and Perry
+{[}3{]}, Theorem 7.5. Section 7 of {[}3{]} supplies the
+circular-difference invariant subspace and integral-operator framework;
+these ingredients are not claimed as new. Zhao {[}4{]} studies classical
+occurrences at arbitrary increasing index positions, so its
+identical-looking forbidden triples describe a different problem. OEIS
+A000708 {[}5{]} already records \(E_{n+1}-2E_n\) and the EGF
+\((1-2\cos z)/(1-\sin z)\); neither the sequence nor that EGF is claimed
+as new.
+
+The potential contribution is their exact identification with the marked
+consecutive-\(321\) total in this class, together with the three
+resulting popularity constants. A targeted failure to locate a directly
+duplicating theorem does not establish originality or priority.
+\textbf{NOVELTY: INCONCLUSIVE.}
+
+\section{Reproducibility and evidence
+provenance}\label{reproducibility-and-evidence-provenance}
+
+The supplied v0.4 archive is pinned by SHA256:
+
+\begin{verbatim}
+9fca07c3ce4f15bfa7c9022660cab8051a175149291a0c38e605dce1c5adc446
+\end{verbatim}
+
+The original mathematical files and code are preserved byte-for-byte.
+The v0.4.1 PowerShell launcher applies three path-separator conversions
+to a Python verifier in memory; it is a Windows execution fix and not a
+new mathematical version.
+
+During preparation of this publication edition, the v0.4 difference
+verifier passed (19 frozen v0.3 files, 27 v0.4 manifest entries, two
+editorial-line changes), the original independent permutation
+enumeration passed for \(3\leq n\leq9\), and the exact rational simplex
+checker passed for every \(3\leq n\leq22\). Larger values printed by the
+original arithmetic script evaluate the claimed formula rather than
+independently counting occurrences. Finite computation is evidence, not
+a replacement for the proof.
+
+References {[}1{]}, {[}3{]}, {[}4{]} and {[}5{]} were inspected in this
+ChatGPT publication-preparation session on 5 November 2026. Theorem 7.5
+in {[}3{]} attributes the avoidance count to {[}2{]}; {[}2{]}'s
+bibliographic metadata was checked against an author-affiliated
+institutional record. These checks do not change Claude's firsthand
+REFERENCES PARTIAL status or imply personal inspection by the human
+author. The owner-supplied Claude report is preserved verbatim in the
+evidence archive. It reports independent C enumeration for every
+\(3\leq n\leq13\), analytical re-derivation and symbolic checks; that C
+source was not supplied or rerun here. The owner's Windows console
+record reports Python 3.12.10, the pinned ZIP hash, all integrity
+checks, both original verifiers and the final v0.4.1 reproduction PASS.
+Its output was checked for consistency, but the Windows machine and
+original transcript-file bytes were not accessed here. Frozen messages
+saying Windows was untested or publication was on HOLD describe the
+earlier archival state. Novelty remains \textbf{INCONCLUSIVE}.
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Nathanaël Hassler and Sergey Kirgizov. \emph{Emerging consecutive
+  pattern avoidance}. arXiv:2511.02442v2, 10 October 2026. Table 1
+  (Class 12), equation (1.1), Section 5.
+  \url{https://arxiv.org/html/2511.02442v2}.
+\item
+  Sergey Kitaev and Toufik Mansour. \emph{Simultaneous avoidance of
+  generalized patterns}. Ars Combinatoria \textbf{75} (2005), 267-288.
+  \url{https://arxiv.org/abs/math/0205182}.
+\item
+  Richard Ehrenborg, Sergey Kitaev and Peter Perry. \emph{A spectral
+  approach to consecutive pattern-avoiding permutations}. Journal of
+  Combinatorics \textbf{2}(3) (2011), 305-353. DOI:
+  \href{https://doi.org/10.4310/JOC.2011.v2.n3.a1}{10.4310/JOC.2011.v2.n3.a1}.
+  Section 7, especially Lemma 7.1 and Theorem 7.5. Manuscript:
+  \url{https://arxiv.org/abs/1009.2119}.
+\item
+  Alina F. Y. Zhao. \emph{Pattern Popularity in Multiply Restricted
+  Permutations}. Journal of Integer Sequences \textbf{17} (2014),
+  Article 14.10.3.
+  \url{https://cs.uwaterloo.ca/journals/JIS/VOL17/Zhao/zhao3.html}.
+\item
+  OEIS Foundation Inc.~\emph{The On-Line Encyclopedia of Integer
+  Sequences}, A000708. Known Euler-number difference and EGF; accessed 5
+  November 2026. \url{https://oeis.org/A000708}.
+\end{enumerate}
+
+\end{document}

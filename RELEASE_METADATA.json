@@ -1,0 +1,18 @@
+{
+  "title": "Exact Consecutive-Pattern Popularity in the Class Avoiding 123, 231 and 312",
+  "author": "Ryutaro Yonezu",
+  "affiliation": "Independent Researcher",
+  "version": "v1.0",
+  "manuscript_date": "2026-11-05",
+  "type": "Preprint",
+  "license": "All rights reserved",
+  "novelty": "INCONCLUSIVE",
+  "human_peer_review": "NOT_PERFORMED",
+  "audit": "Claude v0.2 mathematical PASS, v0.3 delta PASS",
+  "windows": "Owner-supplied console reproduction PASS",
+  "payload_stage": "Prepared before final DOI registration; consult live repository for actual publication identifiers",
+  "owner_publication_authorization": true,
+  "doi": null,
+  "google_scholar": "NOT_CHECKED",
+  "openalex": "NOT_CHECKED"
+}

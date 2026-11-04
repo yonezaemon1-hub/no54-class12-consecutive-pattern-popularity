@@ -1,0 +1,43 @@
+# No54 v0.4 local Linux/Python checks. Windows NOT tested.
+# Only old archived verification scripts run here; final v0.4 integrity is run after this log is frozen.
+
+COMMAND: -I /mnt/data/No54_v0.4_CLAUDE_DELTA_AUDIT_20261105/frozen_v0.3/v0.3/verify_delta_v0.3.py
+EXIT CODE: 0
+PASS: 12 frozen v0.2 package files unchanged
+PASS: 18 v0.3 manifest entries
+PASS: only proof section 8 changed; sections 1-7 and 9 byte-identical
+PASS: novelty INCONCLUSIVE and release HOLD retained in v0.3 status
+
+
+COMMAND: -I /mnt/data/No54_v0.4_CLAUDE_DELTA_AUDIT_20261105/frozen_v0.3/frozen_v0.2/No54_v0.1_VERIFY_20261105.py
+EXIT CODE: 0
+PASS n=3: |A_n|=3, 321=1, 132=213=1
+PASS n=4: |A_n|=8, 321=6, 132=213=5
+PASS n=5: |A_n|=25, 321=29, 132=213=23
+PASS n=6: |A_n|=96, 321=150, 132=213=117
+PASS n=7: |A_n|=427, 321=841, 132=213=647
+PASS n=8: |A_n|=2176, 321=5166, 132=213=3945
+PASS n=9: |A_n|=12465, 321=34649, 132=213=26303
+n | normalization n*|A_n| (%) | normalization (n-2)*|A_n| (%)
+ 10 | 31.848538 | 39.810673
+ 20 | 36.188699 | 40.209666
+ 40 | 38.358586 | 40.377459
+ 60 | 39.081882 | 40.429533
+100 | 39.660519 | 40.469917
+120 | 39.805178 | 40.479842
+4/pi^2 limit: 40.528473%
+ALL ARITHMETIC CHECKS PASS; PROOF AND NOVELTY STILL REQUIRE INDEPENDENT REVIEW
+
+
+COMMAND: -I /mnt/data/No54_v0.4_CLAUDE_DELTA_AUDIT_20261105/frozen_v0.3/frozen_v0.2/No54_v0.1_INDEPENDENT_ATTACK_20261105.py
+EXIT CODE: 0
+PASS n=3: independent simplex DP N321=1
+PASS n=4: independent simplex DP N321=6
+PASS n=5: independent simplex DP N321=29
+PASS n=6: independent simplex DP N321=150
+PASS n=7: independent simplex DP N321=841
+PASS n=10: independent simplex DP N321=252750
+PASS n=15: independent simplex DP N321=15583997521
+PASS n=22: independent simplex DP N321=876726137720576550
+PASS: all n=3..22 match, no shared core recurrence or original verifier
+

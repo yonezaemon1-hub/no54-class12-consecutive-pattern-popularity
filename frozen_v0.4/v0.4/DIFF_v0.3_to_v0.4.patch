@@ -1,0 +1,20 @@
+--- v0.3/No54_v0.3_PROOF_REFERENCES_20261105.md
++++ v0.4/No54_v0.4_PROOF_REFERENCES_STATUS_20261105.md
+@@ -4,7 +4,7 @@
+ 
+ **Author:** Ryutaro Yonezu — Independent Researcher  
+ **Date:** 2026-11-05  
+-**Status:** Mathematical derivation drafted; independent AI audit **NOT PERFORMED**; novelty **INCONCLUSIVE**; human peer review **NOT PERFORMED**; publication **HOLD**.  
++**Status:** Mathematical derivation independently AI-audited (Claude v0.2 user-supplied report: MODEL / PROOF / COMPUTATION PASS; v0.3 differential audit PASS); novelty **INCONCLUSIVE**; human peer review **NOT PERFORMED**; publication **HOLD**.  
+ **Scope:** Consecutive (not classical) patterns of length three. All calculations below concern this one avoidance class only.
+ 
+ ## 1. Definitions and claimed theorem
+@@ -15,7 +15,7 @@
+ 
+ Let `N_n(p)` be the sum of the numbers of consecutive occurrences of pattern `p` over **all** permutations in `A_n`, counting each location separately.
+ 
+-**Theorem (candidate; requires independent audit).** For every integer `n >= 3`,
++**Theorem (independent AI mathematical audit reported PASS; novelty not established).** For every integer `n >= 3`,
+ 
+ 1. `|A_n| = n E_{n-1}` (known, included only as a cross-check).
+ 2. `N_n(321) = E_{n+1} - 2 E_n`.

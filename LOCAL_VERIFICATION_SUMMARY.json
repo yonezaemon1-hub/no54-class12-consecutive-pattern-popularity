@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "direct_enumeration_range": "n=3..9",
+  "independent_rational_range": "every n=3..22",
+  "v0.4_manifest_entries": 27,
+  "frozen_v0.3_files": 19,
+  "math_modified": false,
+  "windows_current_session": "NOT_EXECUTED; owner-reported PASS",
+  "human_peer_review": "NOT_PERFORMED",
+  "novelty": "INCONCLUSIVE",
+  "windows_user_console": "PROVIDED; integrity and numerical output consistency PASS",
+  "claude_report": "PROVIDED AND READ; original report preserved",
+  "mathematical_core": "unchanged"
+}

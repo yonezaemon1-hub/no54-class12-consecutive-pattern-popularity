@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "original_core_sha256": "3e252cd2e305b4b7d01f387dce5a58e8860798ad396a5e95570a0cc206d02e64",
+  "notation_items_checked": 119,
+  "sections_checked": 7,
+  "description": "Sections 1-7 reconstruct the exact frozen prose and every formula token, apart from heading numbering, typesetting delimiters and pagination commands."
+}

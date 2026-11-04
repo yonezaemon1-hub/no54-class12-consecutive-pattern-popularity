@@ -1,0 +1,418 @@
+[
+  {
+    "audited_notation": "n",
+    "typeset_latex": "n"
+  },
+  {
+    "audited_notation": "E_n",
+    "typeset_latex": "E_n"
+  },
+  {
+    "audited_notation": "N_n(p)",
+    "typeset_latex": "N_n(p)"
+  },
+  {
+    "audited_notation": "p",
+    "typeset_latex": "p"
+  },
+  {
+    "audited_notation": "A_n",
+    "typeset_latex": "A_n"
+  },
+  {
+    "audited_notation": "x_1",
+    "typeset_latex": "x_1"
+  },
+  {
+    "audited_notation": "u_j",
+    "typeset_latex": "u_j"
+  },
+  {
+    "audited_notation": "u",
+    "typeset_latex": "u"
+  },
+  {
+    "audited_notation": "x_j",
+    "typeset_latex": "x_j"
+  },
+  {
+    "audited_notation": "t",
+    "typeset_latex": "t"
+  },
+  {
+    "audited_notation": "1",
+    "typeset_latex": "1"
+  },
+  {
+    "audited_notation": "n!",
+    "typeset_latex": "n!"
+  },
+  {
+    "audited_notation": "U",
+    "typeset_latex": "U"
+  },
+  {
+    "audited_notation": "F",
+    "typeset_latex": "F"
+  },
+  {
+    "audited_notation": "z^2",
+    "typeset_latex": "z^2"
+  },
+  {
+    "audited_notation": "z^3",
+    "typeset_latex": "z^3"
+  },
+  {
+    "audited_notation": "H",
+    "typeset_latex": "H"
+  },
+  {
+    "audited_notation": "321",
+    "typeset_latex": "321"
+  },
+  {
+    "audited_notation": "123",
+    "typeset_latex": "123"
+  },
+  {
+    "audited_notation": "231",
+    "typeset_latex": "231"
+  },
+  {
+    "audited_notation": "312",
+    "typeset_latex": "312"
+  },
+  {
+    "audited_notation": "132",
+    "typeset_latex": "132"
+  },
+  {
+    "audited_notation": "213",
+    "typeset_latex": "213"
+  },
+  {
+    "audited_notation": "N_n(321)",
+    "typeset_latex": "N_n(321)"
+  },
+  {
+    "audited_notation": "n-2",
+    "typeset_latex": "n-2"
+  },
+  {
+    "audited_notation": "n|A_n|",
+    "typeset_latex": "n|A_n|"
+  },
+  {
+    "audited_notation": "(n-2)|A_n|",
+    "typeset_latex": "(n-2)|A_n|"
+  },
+  {
+    "audited_notation": "z=0",
+    "typeset_latex": "z=0"
+  },
+  {
+    "audited_notation": "F=1+zUF",
+    "typeset_latex": "F=1+zUF"
+  },
+  {
+    "audited_notation": "F(z,0)=A(z)",
+    "typeset_latex": "F(z,0)=A(z)"
+  },
+  {
+    "audited_notation": "F(z,1)=1",
+    "typeset_latex": "F(z,1)=1"
+  },
+  {
+    "audited_notation": "F_y(z,y)=-z F(z,1-y)",
+    "typeset_latex": "F_y(z,y)=-z F(z,1-y)"
+  },
+  {
+    "audited_notation": "A_n = Av_n(123,231,312)",
+    "typeset_latex": "A_n=\\operatorname{Av}_n(123,231,312)"
+  },
+  {
+    "audited_notation": "A(z) = sum_{n>=0} E_n z^n / n! = sec(z)+tan(z)",
+    "typeset_latex": "A(z)=\\sum_{n\\geq0} E_n z^n/n!=\\sec z+\\tan z"
+  },
+  {
+    "audited_notation": "n >= 3",
+    "typeset_latex": "n\\geq3"
+  },
+  {
+    "audited_notation": "n>=3",
+    "typeset_latex": "n\\geq3"
+  },
+  {
+    "audited_notation": "|A_n| = n E_{n-1}",
+    "typeset_latex": "|A_n|=nE_{n-1}"
+  },
+  {
+    "audited_notation": "|A_n|=n E_{n-1}",
+    "typeset_latex": "|A_n|=nE_{n-1}"
+  },
+  {
+    "audited_notation": "|A_n|=nE_{n-1}",
+    "typeset_latex": "|A_n|=nE_{n-1}"
+  },
+  {
+    "audited_notation": "N_n(321) = E_{n+1} - 2 E_n",
+    "typeset_latex": "N_n(321)=E_{n+1}-2E_n"
+  },
+  {
+    "audited_notation": "N_n(321) = E_{n+1}-2E_n",
+    "typeset_latex": "N_n(321)=E_{n+1}-2E_n"
+  },
+  {
+    "audited_notation": "N_n(132) = N_n(213) = ((n-2)n E_{n-1} - E_{n+1} + 2 E_n)/2",
+    "typeset_latex": "N_n(132)=N_n(213)=\\frac{(n-2)nE_{n-1}-E_{n+1}+2E_n}{2}"
+  },
+  {
+    "audited_notation": "pop(p)=lim N_n(p)/(n|A_n|)",
+    "typeset_latex": "\\operatorname{pop}(p)=\\lim_{n\\to\\infty}N_n(p)/(n|A_n|)"
+  },
+  {
+    "audited_notation": "pop(321)=4/pi^2",
+    "typeset_latex": "\\operatorname{pop}(321)=4/\\pi^2"
+  },
+  {
+    "audited_notation": "pop(132)=pop(213)=1/2-2/pi^2",
+    "typeset_latex": "\\operatorname{pop}(132)=\\operatorname{pop}(213)=1/2-2/\\pi^2"
+  },
+  {
+    "audited_notation": "pi",
+    "typeset_latex": "\\pi"
+  },
+  {
+    "audited_notation": "x_1,...,x_n",
+    "typeset_latex": "x_1,\\ldots,x_n"
+  },
+  {
+    "audited_notation": "Unif(0,1)",
+    "typeset_latex": "\\operatorname{Unif}(0,1)"
+  },
+  {
+    "audited_notation": "S_n",
+    "typeset_latex": "S_n"
+  },
+  {
+    "audited_notation": "u_j = {x_j - x_{j+1}}",
+    "typeset_latex": "u_j=\\{x_j-x_{j+1}\\}"
+  },
+  {
+    "audited_notation": "1<=j<=n-1",
+    "typeset_latex": "1\\leq j\\leq n-1"
+  },
+  {
+    "audited_notation": "[0,1)",
+    "typeset_latex": "[0,1)"
+  },
+  {
+    "audited_notation": "(x_1,...,x_n) -> (x_1,u_1,...,u_{n-1})",
+    "typeset_latex": "(x_1,\\ldots,x_n)\\longmapsto(x_1,u_1,\\ldots,u_{n-1})"
+  },
+  {
+    "audited_notation": "x_j,x_{j+1},x_{j+2}",
+    "typeset_latex": "x_j,x_{j+1},x_{j+2}"
+  },
+  {
+    "audited_notation": "{132,213,321}",
+    "typeset_latex": "\\{132,213,321\\}"
+  },
+  {
+    "audited_notation": "{123,231,312}",
+    "typeset_latex": "\\{123,231,312\\}"
+  },
+  {
+    "audited_notation": "u_j+u_{j+1}<1",
+    "typeset_latex": "u_j+u_{j+1}<1"
+  },
+  {
+    "audited_notation": "u_j+u_{j+1}>1",
+    "typeset_latex": "u_j+u_{j+1}>1"
+  },
+  {
+    "audited_notation": "{x_j-u_j}",
+    "typeset_latex": "\\{x_j-u_j\\}"
+  },
+  {
+    "audited_notation": "{x_j-u_j-u_{j+1}}",
+    "typeset_latex": "\\{x_j-u_j-u_{j+1}\\}"
+  },
+  {
+    "audited_notation": "x_j >= u_j+u_{j+1}",
+    "typeset_latex": "x_j\\geq u_j+u_{j+1}"
+  },
+  {
+    "audited_notation": "1-u_j-u_{j+1}",
+    "typeset_latex": "1-u_j-u_{j+1}"
+  },
+  {
+    "audited_notation": "m=n-1",
+    "typeset_latex": "m=n-1"
+  },
+  {
+    "audited_notation": "Omega_m={u in [0,1]^m: u_j+u_{j+1}<1 for j=1,...,m-1}",
+    "typeset_latex": "\\Omega_m=\\{u\\in[0,1]^m: u_j+u_{j+1}<1\\ \\text{for }j=1,\\ldots,m-1\\}"
+  },
+  {
+    "audited_notation": "|A_n|/n! = int_{Omega_{n-1}} 1 du",
+    "typeset_latex": "|A_n|/n!=\\int_{\\Omega_{n-1}}1\\,du"
+  },
+  {
+    "audited_notation": "N_n(321)/n! = int_{Omega_{n-1}} [sum_{j=1}^{n-2}(1-u_j-u_{j+1})] du",
+    "typeset_latex": "N_n(321)/n!=\\int_{\\Omega_{n-1}}\\left[\\sum_{j=1}^{n-2}(1-u_j-u_{j+1})\\right]du"
+  },
+  {
+    "audited_notation": "(Uf)(t)=int_0^{1-t} f(s) ds",
+    "typeset_latex": "(Uf)(t)=\\int_0^{1-t}f(s)\\,ds"
+  },
+  {
+    "audited_notation": "F(z,t)=sum_{k>=0} z^k (U^k 1)(t)",
+    "typeset_latex": "F(z,t)=\\sum_{k\\geq0}z^k(U^k1)(t)"
+  },
+  {
+    "audited_notation": "|z|<1",
+    "typeset_latex": "|z|<1"
+  },
+  {
+    "audited_notation": "dF(z,t)/dt = -z F(z,1-t)",
+    "typeset_latex": "\\frac{\\partial F(z,t)}{\\partial t}=-zF(z,1-t)"
+  },
+  {
+    "audited_notation": "d^2F/dt^2 = -z^2 F",
+    "typeset_latex": "\\frac{\\partial^2F}{\\partial t^2}=-z^2F"
+  },
+  {
+    "audited_notation": "F(z,t)=A(z)cos(zt)-sin(zt)",
+    "typeset_latex": "F(z,t)=A(z)\\cos(zt)-\\sin(zt)"
+  },
+  {
+    "audited_notation": "A(z)=(1+sin z)/cos z = sec z+tan z",
+    "typeset_latex": "A(z)=(1+\\sin z)/\\cos z=\\sec z+\\tan z"
+  },
+  {
+    "audited_notation": "m>=1",
+    "typeset_latex": "m\\geq1"
+  },
+  {
+    "audited_notation": "int_{Omega_m} 1 du = int_0^1 (U^{m-1}1)(t)dt",
+    "typeset_latex": "\\int_{\\Omega_m}1\\,du=\\int_0^1(U^{m-1}1)(t)\\,dt"
+  },
+  {
+    "audited_notation": "sum_{m>=1} z^m vol(Omega_m) = z int_0^1 F(z,t)dt = F(z,0)-1 = A(z)-1",
+    "typeset_latex": "\\sum_{m\\geq1}z^m\\operatorname{vol}(\\Omega_m)=z\\int_0^1F(z,t)\\,dt=F(z,0)-1=A(z)-1"
+  },
+  {
+    "audited_notation": "vol(Omega_m)=E_m/m!",
+    "typeset_latex": "\\operatorname{vol}(\\Omega_m)=E_m/m!"
+  },
+  {
+    "audited_notation": "J(z)=int_0^1 int_0^{1-u} (1-u-v) F(z,u)F(z,v) dv du",
+    "typeset_latex": "J(z)=\\int_0^1\\int_0^{1-u}(1-u-v)F(z,u)F(z,v)\\,dv\\,du"
+  },
+  {
+    "audited_notation": "u_j,u_{j+1}",
+    "typeset_latex": "u_j,u_{j+1}"
+  },
+  {
+    "audited_notation": "u_1,...,u_{n-1}",
+    "typeset_latex": "u_1,\\ldots,u_{n-1}"
+  },
+  {
+    "audited_notation": "n=m+1",
+    "typeset_latex": "n=m+1"
+  },
+  {
+    "audited_notation": "H(z):=sum_{n>=3} N_n(321) z^n/n! = z^3 J(z)",
+    "typeset_latex": "H(z):=\\sum_{n\\geq3}N_n(321)z^n/n!=z^3J(z)"
+  },
+  {
+    "audited_notation": "F(z,t)=1+z int_0^{1-t}F(z,s)ds",
+    "typeset_latex": "F(z,t)=1+z\\int_0^{1-t}F(z,s)\\,ds"
+  },
+  {
+    "audited_notation": "z int_0^{1-u} (1-u-v)F(z,v)dv = int_u^1 (F(z,y)-1)dy",
+    "typeset_latex": "z\\int_0^{1-u}(1-u-v)F(z,v)\\,dv=\\int_u^1(F(z,y)-1)\\,dy"
+  },
+  {
+    "audited_notation": "J(z) = (1/z) int_0^1 F(z,u) int_u^1(F(z,y)-1)dy du",
+    "typeset_latex": "J(z)=\\frac1z\\int_0^1F(z,u)\\int_u^1(F(z,y)-1)\\,dy\\,du"
+  },
+  {
+    "audited_notation": "     = (1/z) int_0^1 (F(z,y)-1) int_0^y F(z,u)du dy",
+    "typeset_latex": "\\phantom{J(z)}=\\frac1z\\int_0^1(F(z,y)-1)\\int_0^y F(z,u)\\,du\\,dy"
+  },
+  {
+    "audited_notation": "     = (1/z^2) int_0^1 (F(z,y)-1)(F(z,1-y)-1)dy",
+    "typeset_latex": "\\phantom{J(z)}=\\frac1{z^2}\\int_0^1(F(z,y)-1)(F(z,1-y)-1)\\,dy"
+  },
+  {
+    "audited_notation": "z int_0^1F(z,y)dy=A(z)-1",
+    "typeset_latex": "z\\int_0^1F(z,y)\\,dy=A(z)-1"
+  },
+  {
+    "audited_notation": "z^3 J(z) = -int_0^1 (F-1) F_y dy - z int_0^1(F-1)dy",
+    "typeset_latex": "z^3J(z)=-\\int_0^1(F-1)F_y\\,dy-z\\int_0^1(F-1)\\,dy"
+  },
+  {
+    "audited_notation": "          = (A-1)^2/2 - (A-1) + z",
+    "typeset_latex": "\\phantom{z^3J(z)}=(A-1)^2/2-(A-1)+z"
+  },
+  {
+    "audited_notation": "          = (A^2-4A+3)/2 + z",
+    "typeset_latex": "\\phantom{z^3J(z)}=(A^2-4A+3)/2+z"
+  },
+  {
+    "audited_notation": "A'=(A^2+1)/2",
+    "typeset_latex": "A'=(A^2+1)/2"
+  },
+  {
+    "audited_notation": "sec z+tan z",
+    "typeset_latex": "\\sec z+\\tan z"
+  },
+  {
+    "audited_notation": "H(z)=A'(z)-2A(z)+1+z",
+    "typeset_latex": "H(z)=A'(z)-2A(z)+1+z"
+  },
+  {
+    "audited_notation": "z^0,z^1,z^2",
+    "typeset_latex": "z^0,z^1,z^2"
+  },
+  {
+    "audited_notation": "z^n/n!",
+    "typeset_latex": "z^n/n!"
+  },
+  {
+    "audited_notation": "R o C",
+    "typeset_latex": "R\\circ C"
+  },
+  {
+    "audited_notation": "N_n(132)=N_n(213)",
+    "typeset_latex": "N_n(132)=N_n(213)"
+  },
+  {
+    "audited_notation": "N_n(132)+N_n(213)+N_n(321) = (n-2)|A_n|",
+    "typeset_latex": "N_n(132)+N_n(213)+N_n(321)=(n-2)|A_n|"
+  },
+  {
+    "audited_notation": "pop",
+    "typeset_latex": "\\operatorname{pop}"
+  },
+  {
+    "audited_notation": "E_n/n! ~ 2(2/pi)^(n+1)",
+    "typeset_latex": "E_n/n!\\sim2(2/\\pi)^{n+1}"
+  },
+  {
+    "audited_notation": "N_n(321)/(n|A_n|) = (E_{n+1}-2E_n)/(n^2 E_{n-1}) -> 4/pi^2",
+    "typeset_latex": "\\frac{N_n(321)}{n|A_n|}=\\frac{E_{n+1}-2E_n}{n^2E_{n-1}}\\longrightarrow\\frac4{\\pi^2}"
+  },
+  {
+    "audited_notation": "3<=n<=9",
+    "typeset_latex": "3\\leq n\\leq9"
+  },
+  {
+    "audited_notation": "n=10,20,40,60,100,120",
+    "typeset_latex": "n=10,20,40,60,100,120"
+  }
+]

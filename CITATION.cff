@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Limited preprint v1.0. Consult the live repository CITATION.cff for the registered DOI after deposition."
+type: article
+title: "Exact Consecutive-Pattern Popularity in the Class Avoiding 123, 231 and 312"
+authors:
+  - family-names: Yonezu
+    given-names: Ryutaro
+    affiliation: Independent Researcher
+version: "v1.0"
+abstract: "Exact marked consecutive-pattern totals and asymptotic popularities in Av_n(123,231,312). Novelty INCONCLUSIVE; human peer review not performed."
+keywords:
+  - consecutive patterns
+  - permutation avoidance
+  - pattern popularity
+  - Euler zigzag numbers
+  - integral operators
+license: LicenseRef-All-Rights-Reserved

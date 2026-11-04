@@ -1,0 +1,43 @@
+LOG: C:\Users\meteo\Downloads\No54_v0.4_WINDOWS_LOG_20261105_073338_798.txt
+EXTRACTED: C:\Users\meteo\Downloads\No54_v0.4_WINDOWS_REPRO_20261105_073338_798
+PS C:\Users\meteo\OneDrive\Desktop> powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\Downloads\No54_Run_Windows_v041.ps1"
+No54 v0.4.1 Windows path-separator hotfix. Original v0.4 ZIP is immutable.
+PASS: original ZIP SHA256 9fca07c3ce4f15bfa7c9022660cab8051a175149291a0c38e605dce1c5adc446
+Python 3.12.10
+PASS: all 27 original package hashes and file inventory
+PASS: Windows path normalization in memory only; original verifier untouched
+PASS: all 19 frozen v0.3 files unchanged
+PASS: 27 v0.4 manifest hashes and exact inventory
+PASS: exactly two editorial lines changed, every other byte unchanged
+PASS: v0.4 diff patch contains two hunks
+PASS: RELEASE HOLD, NOVELTY INCONCLUSIVE; Windows untested
+PASS n=3: |A_n|=3, 321=1, 132=213=1
+PASS n=4: |A_n|=8, 321=6, 132=213=5
+PASS n=5: |A_n|=25, 321=29, 132=213=23
+PASS n=6: |A_n|=96, 321=150, 132=213=117
+PASS n=7: |A_n|=427, 321=841, 132=213=647
+PASS n=8: |A_n|=2176, 321=5166, 132=213=3945
+PASS n=9: |A_n|=12465, 321=34649, 132=213=26303
+n | normalization n*|A_n| (%) | normalization (n-2)*|A_n| (%)
+ 10 | 31.848538 | 39.810673
+ 20 | 36.188699 | 40.209666
+ 40 | 38.358586 | 40.377459
+ 60 | 39.081882 | 40.429533
+100 | 39.660519 | 40.469917
+120 | 39.805178 | 40.479842
+4/pi^2 limit: 40.528473%
+ALL ARITHMETIC CHECKS PASS; PROOF AND NOVELTY STILL REQUIRE INDEPENDENT REVIEW
+PASS n=3: independent simplex DP N321=1
+PASS n=4: independent simplex DP N321=6
+PASS n=5: independent simplex DP N321=29
+PASS n=6: independent simplex DP N321=150
+PASS n=7: independent simplex DP N321=841
+PASS n=10: independent simplex DP N321=252750
+PASS n=15: independent simplex DP N321=15583997521
+PASS n=22: independent simplex DP N321=876726137720576550
+PASS: all n=3..22 match, no shared core recurrence or original verifier
+PASS: No54 v0.4.1 WINDOWS REPRODUCTION (path-separator fix only)
+NOTE: Mathematics and audited data unchanged; novelty INCONCLUSIVE; publication HOLD.
+LOG: C:\Users\meteo\Downloads\No54_v041_WINDOWS_LOG_20261105_074424_599.txt
+EXTRACTED: C:\Users\meteo\Downloads\No54_v041_WINDOWS_REPRO_20261105_074424_599
+PS C:\Users\meteo\OneDrive\Desktop>

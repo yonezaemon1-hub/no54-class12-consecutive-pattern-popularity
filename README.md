@@ -69,3 +69,10 @@ See the manuscript bibliography and frozen v0.4 source-check record for Hassler-
 ## Rights and citation
 
 Copyright (C) 2026 Ryutaro Yonezu. All rights reserved, including code and supplementary material. Human peer review has not been performed. Cite the live CITATION.cff and final DOI linked in the live repository; the citation file within this immutable ZIP was prepared before DOI registration.
+
+## Author correspondence (metadata update, 2026-11-12)
+
+**Ryutaro Yonezu — Independent Researcher**  
+Research correspondence: **yonezaemon1+research@gmail.com**
+
+This contact-information addition does not revise any mathematical claims, frozen verification files, published preprint PDF, release assets, DOI, or existing SHA256 checksums.
